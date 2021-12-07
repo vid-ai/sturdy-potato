@@ -55,3 +55,33 @@ article header p {
 .related {
   list-style: none;
 }
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px sold #1098ad;
+}
+
+body {
+  background-color: lightyellow;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-weight: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+/* article p:first-child{
+  color: green;
+} */
+
+article p:last-child {
+  color: plum;
+}
