@@ -1,3 +1,31 @@
 h1 {
-  color: rgb(181, 236, 51);
+  color: blue;
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
 }
