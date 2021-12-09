@@ -83,5 +83,27 @@ li:nth-child(2) {
 } */
 
 article p:last-child {
-  color: plum;
+  color: red;
+}
+
+/*...... Styling Links...... */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
 }
