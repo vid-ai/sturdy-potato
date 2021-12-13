@@ -24,6 +24,8 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  /*background-color: orange;*/
+  position: relative;
 }
 
 h3 {
@@ -38,11 +40,36 @@ h4 {
   text-align: center;
 }
 
+h1::first-letter {
+  font-size: normal;
+  margin-right: 5px;
+}
+
+/*h2::first-letter{
+  font-size:80px;
+}*/
+
+h2::before {
+  content: "top";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h2::after {
+}
+
 /* ........................... Body Styling ........................*/
 
 body {
   background-color: white;
   font-family: sans-serif;
+  /* position: relative;*/
 }
 
 .container {
@@ -50,7 +77,17 @@ body {
   /*margin-left: auto;
   margin-right: auto;*/
   margin: 0 auto;
+  /*position: relative;*/
 }
+
+/* p::first-line{
+  color: red;
+} */
+
+/*h3+p::first-line{
+  color: red;
+}*/
+
 p {
   font-size: 22px;
   font-family: sans-serif;
@@ -63,6 +100,10 @@ ul {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
+/*li{
+  display: inline;
+}*/
 
 li {
   font-family: sans-serif;
@@ -83,6 +124,14 @@ li:nth-child(2) {
   color: red;
 }
 
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50;
+  right: 50;
+}
 /* .............................. Article .............................*/
 
 article {
@@ -146,6 +195,16 @@ aside {
 
 nav {
   font-size: 18px;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 a:link {
