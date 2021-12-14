@@ -22,6 +22,7 @@ h1 {
 }
 
 h2 {
+  color: rgb(50, 221, 233);
   font-size: 40px;
   margin-bottom: 30px;
   /*background-color: orange;*/
@@ -29,12 +30,14 @@ h2 {
 }
 
 h3 {
+  color: rgb(50, 221, 233);
   font-size: 30px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
 h4 {
+  color: rgb(50, 221, 233);
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -195,7 +198,7 @@ aside {
   padding: 50px 0;
 }
 
-/*................................... Links .............................. */
+/*........................... Links. &. Nav  .............................. */
 
 nav {
   font-size: 18px;
