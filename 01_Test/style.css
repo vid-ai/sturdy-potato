@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* h1,
@@ -80,7 +81,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /*margin-left: auto;
   margin-right: auto;*/
   margin: 0 auto;
@@ -143,6 +144,9 @@ button {
 
 article {
   margin-bottom: 60px;
+  /* background-color: green; */
+  width: 825px;
+  float: left;
 }
 
 article header p {
@@ -160,13 +164,21 @@ article > p:last-child {
 /*............................... Header ...............................*/
 
 .main-header {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  background-color: red;
   /*padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 20px;
-  height: 80px;
+  /* height: 80px; */
+  border-top: rgb(50, 221, 233) solid;
+}
+
+.clearfix::after {
+  clear: both;
+  content: " ";
+  display: block;
 }
 
 .post-header {
@@ -183,7 +195,7 @@ article > p:last-child {
 
 .author {
   font-size: 18px;
-  float: right;
+  float: left;
   padding-top: 10px;
   padding-left: 20px;
 }
@@ -195,15 +207,20 @@ article > p:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /*................................ Aside ..................................*/
 
 aside {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   border-top: 5px solid #1098ad;
   border-bottom: 5px sold #1098ad;
   padding: 50px 0;
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+  /* box-sizing: border-box; */
 }
 
 /*........................... Links. &. Nav  .............................. */
@@ -211,6 +228,9 @@ aside {
 nav {
   font-size: 18px;
   float: right;
+}
+.clear {
+  /* clear: both; */
 }
 
 nav a:link {
@@ -243,13 +263,15 @@ a:active {
   font-style: italic;
 }
 
-/*...................................Footer styling...............................*/
+/*...................................Footer.................................*/
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-size: 16px;
+  /* background-color: yellow; */
+  clear: both;
 }
 
 /* #copyright {
