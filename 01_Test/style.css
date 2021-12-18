@@ -19,6 +19,7 @@ h1 {
   font-size: 26px;
   font-style: italic;
   text-transform: uppercase;
+  float: left;
 }
 
 h2 {
@@ -180,9 +181,16 @@ article > p:last-child {
   height: auto;
 }
 
-.related-author {
+.author {
   font-size: 18px;
-  font-weight: bold;
+  float: right;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
 }
 
 .related {
@@ -202,6 +210,7 @@ aside {
 
 nav {
   font-size: 18px;
+  float: right;
 }
 
 nav a:link {
