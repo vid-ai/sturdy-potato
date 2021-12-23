@@ -228,8 +228,15 @@ aside {
   padding: 50px 0;
   /* background-color: red; */
   width: 300px;
-  float: right;
+  /* float: right; */
   /* box-sizing: border-box; */
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
 }
 
 /*........................... Links. &. Nav  .............................. */
