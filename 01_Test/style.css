@@ -146,7 +146,7 @@ article {
   margin-bottom: 60px;
   /* background-color: green; */
   width: 825px;
-  float: left;
+  /* float: left; */
 }
 
 article header p {
@@ -173,12 +173,15 @@ article > p:last-child {
   margin-bottom: 20px;
   /* height: 80px; */
   border-top: rgb(50, 221, 233) solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .clearfix::after {
-  clear: both;
+  /* clear: both;
   content: " ";
-  display: block;
+  display: block; */
 }
 
 .post-header {
@@ -195,13 +198,19 @@ article > p:last-child {
 
 .author {
   font-size: 18px;
-  float: left;
+  /* float: left; */
   padding-top: 10px;
   padding-left: 20px;
 }
 
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 .author-img {
-  float: left;
+  /* float: left; */
   margin-bottom: 20px;
 }
 
