@@ -143,10 +143,12 @@ button {
 /* .............................. Article .............................*/
 
 article {
-  margin-bottom: 60px;
+  margin-bottom: zero;
   /* background-color: green; */
   width: 825px;
   /* float: left; */
+  /* flex: 0 0 825px; */
+  flex: 1;
 }
 
 article header p {
@@ -165,7 +167,7 @@ article > p:last-child {
 
 .main-header {
   /* background-color: #f7f7f7; */
-  background-color: red;
+  background-color: gainsboro;
   /*padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -252,6 +254,19 @@ aside {
   font-style: normal;
   margin-bottom: 5px;
   display: block;
+}
+
+.row{
+  display:flex;
+  gap: 75px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+aside{
+  /* flex-basis: 300px;
+   flex-shrink: 0; */
+   flex: 0 0 300px;
 }
 /*........................... Links. &. Nav  .............................. */
 
