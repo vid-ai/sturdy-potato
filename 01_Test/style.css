@@ -178,8 +178,8 @@ article > p:last-child {
   justify-content: space-between;
 }
 
-.clearfix::after {
-  /* clear: both;
+/* .clearfix::after {
+  clear: both;
   content: " ";
   display: block; */
 }
@@ -224,7 +224,7 @@ article > p:last-child {
 aside {
   /* background-color: #f7f7f7; */
   border-top: 5px solid #1098ad;
-  border-bottom: 5px sold #1098ad;
+  border-bottom: 5px solid #1098ad;
   padding: 50px 0;
   /* background-color: red; */
   width: 300px;
@@ -239,6 +239,20 @@ aside {
   margin: 30px;
 }
 
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link{
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
 /*........................... Links. &. Nav  .............................. */
 
 nav {
