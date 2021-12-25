@@ -86,6 +86,11 @@ body {
   margin-right: auto;*/
   margin: 0 auto;
   /*position: relative;*/
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
 }
 
 /* p::first-line{
@@ -143,12 +148,12 @@ button {
 /* .............................. Article .............................*/
 
 article {
-  margin-bottom: zero;
+  /* margin-bottom: zero; */
   /* background-color: green; */
   width: 825px;
   /* float: left; */
   /* flex: 0 0 825px; */
-  flex: 1;
+  /* flex: 1; */
 }
 
 article header p {
@@ -178,6 +183,8 @@ article > p:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* display: grid; */
+  grid-column: 1/-1;
 }
 
 /* .clearfix::after {
@@ -256,17 +263,17 @@ aside {
   display: block;
 }
 
-.row{
+/* .row{ 
   display:flex;
   gap: 75px;
   align-items: flex-start;
   margin-bottom: 60px;
-}
+/* } */
 
 aside{
   /* flex-basis: 300px;
-   flex-shrink: 0; */
-   flex: 0 0 300px;
+   flex-shrink: 0; 
+   flex: 0 0 300px; */
 }
 /*........................... Links. &. Nav  .............................. */
 
@@ -315,8 +322,9 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   font-size: 16px;
-  /* background-color: yellow; */
+  background-color: #1098ad;
   clear: both;
+  grid-column: 1/-1;
 }
 
 /* #copyright {
@@ -330,3 +338,4 @@ footer {
 footer p {
   color: green;
 }
+
