@@ -41,9 +41,12 @@ body {
 
 .text,
 .number {
-  color: #ced4da;
   font-size: 20px;
   font-weight: 500;
+}
+
+.number {
+  color: #ced4da;
 }
 
 .open {
