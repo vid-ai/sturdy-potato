@@ -39,14 +39,49 @@
       background-color: #087f5b;
       padding: 32px;
       border-radius: 8px;
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 86px;
+      padding-left: 86px;
     }
 
     img {
       height: 200px;
+      border-radius: 8px;
+      transform: scale(1.5);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+    .text {
+      color: #fff;
+      margin-bottom: 60px;
+    }
+
+    .author-name {
+      color: #c9f3cf;
+      margin-bottom: 10px;
+    }
+    .author-info {
+      color: #c9f3cf;
+    }
+
+    .btn-icon {
+      weight: 24px;
+      width: 24px;
+      stroke: #087f5b;
+    }
+
+    .btn {
+      /* background-color: #fff; */
+      border: none;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 
@@ -54,41 +89,47 @@
     <div class="carousel">
       <img src="maria.jpg" alt="Maria de Almida" />
       <div class="info">
-        <p class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vitae
-          non accusamus quam reiciendis laboriosam, modi, saepe lauda
-        </p>
+        <blockquote class="text">
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          vitae non accusamus quam reiciendis laboriosam, modi Lorem Lorem ipsum
+          dolor. Eius adipisci ut voluptate accusamus molestias sint
+          voluptatibus hic libero praesentium exercitationem minima mole".
+        </blockquote>
         <p class="author-name">Maria de Almedia</p>
         <p class="author-info">Senior Product Manager at EDP Comercial</p>
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="btn btn-icon btn--left"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="btn btn-icon btn--right"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
+      <button class="btn btn-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn--left"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn--right"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
     </div>
   </body>
 </html>
