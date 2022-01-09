@@ -35,6 +35,9 @@
 
       .pagination {
         padding-top: 100px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
 
       .btn {
@@ -43,6 +46,16 @@
         border: 2px solid #087f50;
         border-radius: 50%;
         background: none;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: #087f50;
+      }
+
+      .btn-icon:hover,
+      .btn-icon:active {
+        stroke: #fff;
       }
 
       .btn-icon {
@@ -57,8 +70,12 @@
         color: #343a40;
         height: 36px;
         width: 36px;
-        border: 1px solid #000;
-        /* border-radius: 20%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: row; */
+        /* border: 1px solid #000; */
+        border-radius: 50%;
       }
 
       .page-link:active,
@@ -68,6 +85,7 @@
         color: #fff;
       }
       .dots {
+        color: #868e96;
       }
     </style>
   </head>
