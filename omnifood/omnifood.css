@@ -1,0 +1,71 @@
+------------TYPOGRAPHY----------------
+/********* FONT SIZE (PX) ********/
+
+10/ 12/ 14/ 16/ 18 / 20/ 24/ 30/ 36/ 44/ 52/ 62/ 74/ 86/ 98
+
+
+/******* FONT WEIGHTS *******/
+Default: 400
+Medium: 500
+Semi-bold: 600
+bold: 700
+
+
+/******** SPACING SYSTEM (PX) ********/
+2 / 4/ 8/ 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+/******** WHITE SPACE ********/
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+/****** LINE HEIGHTS ******/
+Default: 01
+         1.05
+         1.6 (paragraph)
+(pagraph)
+
+------------- 02 COLORS --------------
+Primary: #e67e22
+Tints: #fdf2e9
+Shades: #cf711f
+Accents: 
+Greys: #333 , #555
+
+-------------- 03 SHADOWS -------------
+Primary:
+
+
+
+------------ 04 Border Radius -----------
+Default : 9 px
+
+
+
+
+
+/* ********************************************************************** */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6 rem;
+  max-width: 130 rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
