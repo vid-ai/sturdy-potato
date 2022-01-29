@@ -1,69 +1,127 @@
-h1,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1,
 h2,
 h3,
 h4,
 p,
 li {
   font-family: sans-serif;
-}
+} */
+
+/*................................. Headings ...............................*/
 
 h1 {
   color: blue;
   font-size: 26px;
   font-style: italic;
   text-transform: uppercase;
+  float: left;
 }
 
 h2 {
+  color: rgb(50, 221, 233);
   font-size: 40px;
+  margin-bottom: 30px;
+  /*background-color: orange;*/
+  position: relative;
 }
 
 h3 {
+  color: rgb(50, 221, 233);
   font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h4 {
+  color: rgb(50, 221, 233);
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
+h1::first-letter {
+  font-size: normal;
+  margin-right: 5px;
+}
+
+/*h2::first-letter{
+  font-size:80px;
+}*/
+
+h2::before {
+  content: "Top";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h2::before {
+  right: -25px;
+  top: -10px;
+  color: #444;
+}
+
+/* ........................... Body Styling ........................*/
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  /* position: relative;*/
+}
+
+.container {
+  width: 1200px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 0 auto;
+  /*position: relative;*/
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+/* p::first-line{
+  color: red;
+} */
+
+/*h3+p::first-line{
+  color: red;
+}*/
+
 p {
   font-size: 22px;
   font-family: sans-serif;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*li{
+  display: inline;
+}*/
 
 li {
   font-family: sans-serif;
   font-size: 20px;
-}
-
-footer {
-  font-size: 16px;
-}
-
-article header p {
-  font-style: italic;
-}
-
-.related-author {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.related {
-  list-style: none;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px sold #1098ad;
-}
-
-body {
-  background-color: lightyellow;
+  margin-bottom: 10px;
 }
 
 li:first-child {
@@ -72,21 +130,170 @@ li:first-child {
 
 li:last-child {
   font-weight: italic;
+  margin-bottom: 0px;
 }
 
 li:nth-child(2) {
   color: red;
 }
 
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  /* position: absolute;
+  bottom: 50;
+  right: 50; */
+}
+/* .............................. Article .............................*/
+
+article {
+  /* margin-bottom: zero; */
+  /* background-color: green; */
+  width: 825px;
+  /* float: left; */
+  /* flex: 0 0 825px; */
+  /* flex: 1; */
+}
+
+article header p {
+  font-style: italic;
+}
+
 /* article p:first-child{
   color: green;
 } */
 
-article p:last-child {
+article > p:last-child {
   color: red;
 }
 
-/*...... Styling Links...... */
+/*............................... Header ...............................*/
+
+.main-header {
+  /* background-color: #f7f7f7; */
+  background-color: gainsboro;
+  /*padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  /* height: 80px; */
+  border-top: rgb(50, 221, 233) solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display: grid; */
+  grid-column: 1/-1;
+}
+
+/* .clearfix::after {
+  clear: both;
+  content: " ";
+  display: block; */
+}
+
+.post-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*.............................. Authour Related ........................*/
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.author {
+  font-size: 18px;
+  /* float: left; */
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author-img {
+  /* float: left; */
+  margin-bottom: 20px;
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+/*................................ Aside ..................................*/
+
+aside {
+  /* background-color: #f7f7f7; */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  /* background-color: red; */
+  width: 300px;
+  /* float: right; */
+  /* box-sizing: border-box; */
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link{
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* .row{ 
+  display:flex;
+  gap: 75px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+/* } */
+
+/* aside{ 
+   flex-basis: 300px;
+   flex-shrink: 0; 
+   flex: 0 0 300px; */
+}
+/*........................... Links. &. Nav  .............................. */
+
+nav {
+  font-size: 18px;
+  float: right;
+}
+.clear {
+  /* clear: both; */
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
 
 a:link {
   color: #1098ad;
@@ -107,3 +314,28 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+/*...................................Footer.................................*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 16px;
+  background-color: #1098ad;
+  clear: both;
+  grid-column: 1/-1;
+}
+
+/* #copyright {
+  color: red;
+} */
+
+/*.text {
+  color: yellow;
+}*/
+
+footer p {
+  color: green;
+}
+

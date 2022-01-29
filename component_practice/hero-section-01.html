@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero Section</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "rubik", sans-serif;
+        color: #444;
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: green; */
+        padding-top: 32px;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 31px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      header p {
+        font-weight: 600;
+        line-height: 1.6;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 16px 32px;
+        border-radius: 9px;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #e67e22;
+        color: #fff;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+
+      header {
+        /* background-color: red; */
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        /* In relation to Parent Size */
+        left: 50%;
+        top: 50%;
+        /* In relation to Element size */
+        transform: translate(-50%, -50%);
+        /* background-color: violet; */
+      }
+
+      .header-container-inner {
+        width: 50%;
+        /* background-color: pink; */
+      }
+
+      section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-inner">
+            <h1>A healthy meal delivered to your door, every single day</h1>
+            <p>
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+            <a href="#" class="btn">start eating well</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>More about Healthy Food</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          soluta rem sint quasi voluptatem impedit debitis expedita facilis
+          voluptatibus ut non voluptas harum numquam, doloremque corrupti,
+          provident distinctio excepturi odit.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
