@@ -888,6 +888,7 @@ strong {
 /* FOOTER SECTION */
 
 .footer {
+  /* display: block; */
   padding: 12.8rem 0;
 }
 
@@ -941,6 +942,7 @@ strong {
 }
 
 .copyright {
+  /* display: block; */
   font-size: 1.4rem;
   color: #767676;
   line-height: 1;
