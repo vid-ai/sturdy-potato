@@ -13,6 +13,7 @@
     />
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script defer src="script.js"></script>
+    <!-- <link href="script.js" rel="stylesheet" /> -->
     <link href="omnifood.css" rel=" stylesheet" />
     <link href="queries.css" rel="stylesheet" />
     <title>Omnifood</title>
@@ -24,11 +25,11 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#"> How it works</a></li>
-          <li><a class="main-nav-link" href="#"> Meals</a></li>
-          <li><a class="main-nav-link" href="#"> Testimonials</a></li>
-          <li><a class="main-nav-link" href="#"> Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#"> Try for free</a></li>
+          <li><a class="main-nav-link" href="#how"> How it works</a></li>
+          <li><a class="main-nav-link" href="#meals"> Meals</a></li>
+          <li><a class="main-nav-link" href="#testimonials"> Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing"> Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta"> Try for free</a></li>
         </ul>
       </nav>
 
@@ -52,11 +53,11 @@
               nutritional needs.
             </p>
 
-            <a class="btn btn--full margin-right-sm" href="#">
+            <a href="#cta" class="btn btn--full margin-right-sm" >
               start eating well
             </a>
 
-            <a class="btn btn--outline" href="#"> learn more &darr; </a>
+            <a href="#how" class="btn btn--outline"> learn more &darr; </a>
             
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -98,7 +99,7 @@
         </div>
       </section> <!-- ending section-featured -->
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container grid--center-v">
           <span class="subheading"> How It Works</span>
           <h2 class="heading-secondary">
@@ -168,8 +169,8 @@
 
       </section> <!-- ending section-how -->
 
-      <section class="section-meals">
-        <div class="ccontainer">
+      <section class="section-meals" id="meals">
+        <div class="ccontainer center-text">
           <span class="subheading"> Meals</span>
           <h2 class="heading-secondary">
             Omnifood AI chooses from 5,000+ recipes
@@ -328,7 +329,7 @@
 
       </section>  <!-- ending of meal section -->
 
-      <section class="section-testimonials grid grid--2-cols">
+      <section class="section-testimonials grid grid--2-cols" id="testismonials">
         <div class="testimonials-container">
           <span class="subheading"> Testimonials </span>
           <h2 class="heading-secondary testimonial-heading">Once you try it, you can't go back</h2>
@@ -486,7 +487,7 @@
         </div> <!-- ending testimonial-gallery -->
       </section> <!--  ending section-testimonials-->
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary"> Eating well without breaking bank</h2>
@@ -571,7 +572,7 @@
         </div> <!-- ending grid--4-cols Features -->
       </section> <!-- ending section-pricing -->
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -617,7 +618,7 @@
             <li><a class="social-icon " href="#"><ion-icon class="facebook-icon" name="logo-facebook"></ion-icon></li>
             <li><a class="social-icon " href="#"><ion-icon class="twitter-icon" name="logo-twitter"></ion-icon></li> 
           </ul>
-          <p class="copyright"> Copyright & copy:<span class="year"> 2027</span> by omnifood, inc.<br /> All rights reserved</p>
+          <p class="copyright"> Copyright & copy: <span class="year"> 2027</span> by omnifood, inc.<br /> All rights reserved</p>
         </div> <!-- ending logo-col footer -->
 
         <div class="address-col">
