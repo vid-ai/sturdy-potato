@@ -943,12 +943,14 @@ strong {
 }
 
 .copyright {
-  /* display: block; */
   font-size: 1.4rem;
   color: #767676;
   line-height: 1;
   margin-top: auto;
   padding-right: 0;
+  margin-right: unset;
+  width: 20rem;
+  /* border: 1px solid; */
 }
 
 .logo-col {
@@ -956,6 +958,7 @@ strong {
   flex-direction: column;
   padding-right: 0;
   margin-right: 0;
+  /* border: 1px solid red; */
 }
 
 .contacts {
@@ -963,6 +966,8 @@ strong {
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 1.6;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .address {

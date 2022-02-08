@@ -1,7 +1,7 @@
 console.log("Hello world");
 const myName = "Puja Kumari";
 
-const yearEl = document.querySelecter(".year");
+const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
@@ -40,11 +40,10 @@ allLinks.forEach(function (link) {
   });
 });
 
-
 //// Sticky Navigation
 
 const sectionHeroEl = document.querySelector(".section-hero");
-const obs = new IntersectionObserver{
+const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     console.log(ent);
@@ -53,7 +52,7 @@ const obs = new IntersectionObserver{
       document.body.classList.add("sticky");
     }
 
-    if(ent.isIntersecting === true){
+    if (ent.isIntersecting === true) {
       document.body.classList.remove(sticky);
     }
   },
@@ -61,8 +60,8 @@ const obs = new IntersectionObserver{
     // In the viewport
     root: null,
     threshold: 0,
-    rootMargin: -80 px;
+    rootMargin: -80,
   }
-};
+);
 
 obs.observe(sectionHeroEl);
