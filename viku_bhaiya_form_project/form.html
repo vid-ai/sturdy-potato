@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form UI</title>
+
+    <style>
+
+      .checkbox{
+        display:flex;
+        /* justify-content:space-around; */
+      }
+
+    /*.gender{ 
+      display:flex;
+      justify-content: space-around; 
+     } */
+
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <lable for="full-name"> Full Name </lable>
+        <input type="text" placeholder="John Smith" />
+      </div>
+
+      <div class="gender">
+        <lable for="gender"> Gender:</lable>
+        <div class="checkbox">
+          <label> Female </lable>
+          <input type="checkbox" placeholder="femlae" />
+        
+          <lable >Male</lable>
+          <input type="checkbox" placeholder="male" />
+        </div>
+      </div>
+
+      <div>
+        <lable for="hobby">Your hobby</lable>
+        <select id="hobby" required>
+          <option value=" "> please choose one option:</option>
+          <option vale="cooking"> Cooking </option>
+          <option value="farming"> Farming </option>
+          <option value="gardening"> Gardening </option>
+          <option value="tailoring"> Tailoring </option>
+          <option value="pottery"> Porttery </option>
+        </select>
+      </div>
+      <div>
+        <button class="submit"> submit</button>
+      </div>
+
+    </form>
+  </body>
+</html>
