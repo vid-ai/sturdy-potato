@@ -55,7 +55,7 @@
 
 /* Responding to Tablets below 944px */
 
-@media (max-width: 59em) {
+@media (max-width: 59em){
   html {
     font-size: 50%;
   }
@@ -304,7 +304,7 @@
 
 /* Fixing Safari Flexbox Gap */
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
+.no-flexbox-gap .main-navlist li:not(:last-child){
   margin-right:4.8rem;
 }
 
@@ -320,29 +320,35 @@
   margin-right: 1.6rem;
 }
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
-  margin-right:4.8rem;
+.no-flexbox-gap .meal-icon{
+  margin-right: 1.6rem;
 }
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
-  margin-right:4.8rem;
+.no-flexbox-gap .meal-attribute:not(:last-child){
+  margin-bottom: 2rem;
 }
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
-  margin-right:4.8rem;
+.no-flexbox-gap .footer-row div:not(:last-child){
+  margin-right: 6.4rem;
 }
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
-  margin-right:4.8rem;
+.no-flexbox-gap .social-links li:not(:last-child){
+  margin-right: 2.4rem;
 }
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
-  margin-right:4.8rem;
+.no-flexbox-gap .footer-nav li:not(:last-child){
+  margin-bottom: 2.4rem;
 }
 
-.no-flexbox-gap .main-navlist .li:not(:last-child){
-  margin-right:4.8rem;
+@media(max-width:75em){
+  .no-flexbox-gap .main-nav-list li:not(:last-child){
+    margin-right: 3.2rem;
+  }
 }
 
-
-
+@media(max-width:59em){
+  .no-flexbox-gap .main-nav-list li:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
