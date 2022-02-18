@@ -1,7 +1,7 @@
 h2 {
   font-family: "dancing script";
   color: rgb(119, 0, 255);
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   /* padding-left: 10rem; */
   text-align: center;
   margin-bottom: 2rem;
@@ -13,11 +13,56 @@ h2 {
   margin: 0;
 }
 
+.imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
 .maa-papa-img {
-  width: 30rem;
-  height: 20rem;
+  width: 20rem;
+  height: 15rem;
   border-radius: 10%;
-  margin-left: 12rem;
+  /* margin-left: 14rem; */
+}
+
+.bapuji {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.shivji {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.button-icon:hover,
+.button-icon:active {
+  background-color: rgb(160, 84, 231);
+}
+
+.button-icon {
+  background-color: rgb(139, 62, 211);
+  width: 8.2rem;
+  height: 3rem;
+  border-radius: 5rem;
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+  /* text-decoration: none; */
+}
+
+.button-text {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .header-background {
@@ -41,8 +86,8 @@ h2 {
 }
 
 .flower {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   color: rgb(235, 22, 235);
   fill: orange;
 }
@@ -55,6 +100,7 @@ h2 {
 
 .rose {
   color: rgb(243, 53, 53);
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
+  /* padding-top: 6rem; */
 }
