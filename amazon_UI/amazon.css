@@ -14,6 +14,62 @@ body {
 }
 
 .nav {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(74, 207, 207);
+}
+
+.left-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.mic-nav,
+.cart-nav {
+  width: 24px;
+  height: 24px;
+}
+.camera {
+  width: 20px;
+  height: 20px;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  padding-right: 10px;
+}
+
+.search-bar {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.search {
   display: flex;
   justify-content: space-between;
 }
