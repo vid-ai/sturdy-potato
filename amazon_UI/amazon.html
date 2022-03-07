@@ -5,27 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="amazon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <title>Amazon UI</title>
   </head>
   <body>
-    <div class="nav">
-      <div class="left-nav">
-        <ion-icon class="menu-nav" name="menu-sharp"></ion-icon>
-        <p class="amazon-text"><strong>amazon</strong>.in</p>
+    <div class="header">
+      <div class="nav">
+        <div class="left-nav">
+          <ion-icon class="menu-nav" name="menu-sharp"></ion-icon>
+          <p class="amazon-text">
+            <strong>amazon</strong><span class="in">.in</span>
+          </p>
+        </div>
+        <div class="right-nav">
+          <ion-icon class="mic-nav" name="mic-sharp"></ion-icon>
+          <ion-icon class="cart-nav" name="cart-outline"></ion-icon>
+        </div>
       </div>
-      <div class="right-nav">
-        <ion-icon class="mic-nav" name="mic-sharp"></ion-icon>
-        <ion-icon class="cart-nav" name="cart-outline"></ion-icon>
+      <div class="search-bar">
+        <div class="search">
+          <ion-icon class="search-icon" name="search"></ion-icon>
+          <p class="search-text">Search</p>
+        </div>
+        <ion-icon class="camera" name="camera-outline"></ion-icon>
       </div>
     </div>
+    <div class="delivery-address">
+      <ion-icon class="location-icon" name="location-outline"></ion-icon>
+      <p class="delivery-text">Deliver to Puja - Dhanbad 828130</p>
+      <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon>
+    </div>
     <!-- ending nav-->
-    <div class="search-bar">
-      <div class="search">
-        <ion-icon class="search-icon" name="search"></ion-icon>
-        <p class="search-text">Search</p>
+    <div class="options-tab">
+      <div class="option">
+        <div class="option-icon option-1">
+          <ion-icon class="option-logo" name="logo-amazon"></ion-icon>
+          <p class="option-name">Prime</p>
+        </div>
       </div>
-      <ion-icon class="camera" name="camera-outline"></ion-icon>
+      <div class="option">
+        <div class="option-icon option-2">
+          <ion-icon class="option-logo" name="fast-food-outline"></ion-icon>
+          <p class="option-name">Food</p>
+        </div>
+      </div>
+      <div class="option">
+        <div class="option-icon option-3">
+          <ion-icon
+            class="option-logo"
+            name="phone-portrait-outline"
+          ></ion-icon>
+          <p class="option-name">Mobiles</p>
+        </div>
+      </div>
+      <div class="option">
+        <div class="option-icon option-4">
+          <ion-icon
+            class="option-logo"
+            name="game-controller-outline"
+          ></ion-icon>
+          <p class="option-name">Game</p>
+        </div>
+      </div>
+      <div class="option">
+        <div class="option-icon option-5">
+          <ion-icon class="option-logo" name="tv-outline"></ion-icon>
+          <p class="option-name">miniTV</p>
+        </div>
+      </div>
+      <div class="option">
+        <div class="option-icon option-6">
+          <ion-icon class="option-logo" name="woman-outline"></ion-icon>
+          <p class="option-name">Dress</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

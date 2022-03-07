@@ -13,12 +13,25 @@ body {
   margin-top: 40px;
 }
 
+.header {
+  background: linear-gradient(to right, rgb(29, 219, 219), rgb(134, 240, 196));
+  padding-bottom: 1px;
+}
+
+.amazon-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.in {
+  font-size: 12px;
+}
+
 .nav {
   height: 50px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(74, 207, 207);
 }
 
 .left-nav {
@@ -58,12 +71,13 @@ body {
   display: flex;
   justify-content: space-between;
   border: 1px solid #555;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: #fff;
+  /* margin-top: 10px; */
+  margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
@@ -72,4 +86,82 @@ body {
 .search {
   display: flex;
   justify-content: space-between;
+}
+
+.delivery-address {
+  display: flex;
+  justify-content: start;
+  height: 30px;
+  /* border: 1px solid red; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(9, 199, 199);
+}
+
+.delivery-text {
+  font-size: 12px;
+  line-height: 0.9;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.chevron-down {
+  margin-left: 6px;
+  text-align: center;
+  color: #444;
+}
+
+/* Option Tab */
+
+.options-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.option-logo {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.option-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.option-1 {
+  background-color: rgb(172, 233, 248);
+}
+
+.option-2 {
+  background-color: rgb(186, 231, 190);
+}
+
+.option-3 {
+  background-color: rgb(240, 217, 118);
+}
+
+.option-4 {
+  background-color: rgb(236, 190, 136);
+}
+
+.option-5 {
+  background-color: rgb(248, 228, 172);
+}
+
+.option-6 {
+  background-color: rgb(243, 165, 226);
+}
+
+.option-name {
+  font-family: smooch sans;
+  font-size: 16px;
+  font-weight: 300;
 }
